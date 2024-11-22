@@ -139,14 +139,56 @@ main{
     line-height: 25px;
     font-weight: 300;
 }
+/*-----------------------------------------------------------------------------------*/
+/*DUALBOOT-----*/
 
+main{
+    background-color: white;
+    font-family: var(--font-principal);
+}
 
+.dualboot{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 980px;
+    height: auto;
+    text-align: center;
 
-/*-------------------------PROJECT-----------------------*/
+    background-color: white;
+}
+
+.dualboot__title{
+    font-size: 40px;
+    padding-top: 80px;
+} 
+
+.dualboot__photo{
+    margin: 30px auto;
+    width:  190PX;
+    height: 190px;
+    background-image: url(/assets/dualboot1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.dualboot__text{
+    margin: 0 auto;
+    
+    text-wrap: wrap;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+/*-------------------------PROJECT----------------oy un estudiante de primer año de grado superior ASIXc
+            en esta web os voy a enseñar una seleccion de mis proyectos
+            espero que sea de su agrado y les pueda ser útil.------*/
 
 .projects{
     width: 80%;
-    height: 875px;
+    height: auto;
     max-width: 980px;
     margin: 50px auto 0;
 
@@ -192,7 +234,9 @@ main{
     margin: 20px 0;
     text-align: justify;
 
-    padding: 0 20px;
+    padding: 0 20px;oy un estudiante de primer año de grado superior ASIXc
+    en esta web os voy a enseñar una seleccion de mis proyectos
+    espero que sea de su agrado y les pueda ser útil.
 }
 
 .btn__project{
@@ -217,7 +261,6 @@ footer{
     width: 100%;
     height: 110px;
     margin-top: -50px;
-    background-color: black;
     color: var(--font-color);
     font: 15px var(--font-principal);
     text-align: center;
@@ -227,8 +270,85 @@ footer{
 
 
 
-
 /*MEDIAQ------------------*/
+
+/* General Layout Adjustments */
+@media (max-width: 1300px) {
+    .hero__name {
+        font-size: 50px;
+    }
+
+    .hero__subtitle {
+        font-size: 15px;
+    }
+
+    /* Adjust Navigation links */
+    .nav {
+        gap: 10px;
+    }
+
+    .nav__l {
+        font-size: 18px;
+    }
+
+    .containerLogoLinks {
+        letter-spacing: 10px;
+    }
+}
+
+@media (max-width: 1185px) {
+    .projects__item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projects__item__reverse {
+        flex-direction: column;
+    }
+
+    .img__project {
+        width: 100%;
+        max-height: 400px;
+    }
+
+    .itemPro {
+        margin: 20px 0;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Hero Section Adjustments */
+    .hero__name {
+        font-size: 40px;
+    }
+
+    .hero__subtitle {
+        font-size: 14px;
+    }
+
+    /* Navigation links resizing */
+    .nav__l {
+        font-size: 18px;
+    }
+
+    /* About Me section */
+    .aboutme__title {
+        font-size: 35px;
+    }
+
+    .aboutme__text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* Adjust the image size in About Me section */
+    .aboutme__photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Footer *//*MEDIAQ------------------*/
 
 @media(max-width:1300px) {
     .hero__name{
@@ -271,5 +391,50 @@ footer{
 
     .img__project{
         width: 100%;
+    }
+}
+    footer {
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero__name {
+        font-size: 35px;
+    }
+
+    .hero__subtitle {
+        font-size: 13px;
+    }
+
+    /* Navigation adjustments */
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .nav__l {
+        font-size: 16px;
+    }
+
+    /* Projects section */
+    .projects__item {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .projects__item__text {
+        padding: 0 10px;
+    }
+
+    .img__project {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        height: 80px;
     }
 }
