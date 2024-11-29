@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Formulario</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -72,7 +72,7 @@
         <h2>Contact Us</h2>
         <form id="contactFormElement" onsubmit="return handleSubmit(event)">
             <div class="form-group">
-                <label for="name">Name:</label>
+                <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required placeholder="Your full name">
             </div>
 
@@ -82,29 +82,29 @@
             </div>
 
             <div class="form-group">
-                <label for="phone">Phone number:</label>
+                <label for="phone">Numero de Telefono:</label>
                 <input type="tel" id="phone" name="phone" required placeholder="Your phone number" pattern="[0-9]{9}">
                 <small>Format: 1234567890</small>
             </div>
 
             <div class="form-group">
-                <label for="subject">Subject:</label>
+                <label for="subject">Sujeto:</label>
                 <input type="text" id="subject" name="subject" required placeholder="Subject of the message">
             </div>
 
             <div class="form-group">
-                <label for="message">Message:</label>
+                <label for="message">Mensaje:</label>
                 <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
             </div>
 
             <div class="form-group">
-                <button type="submit">Send message</button>
+                <button type="submit">Enviar Mensaje</button>
             </div>
         </form>
     </div>
 
     <div class="success-message" id="successMessage">
-        Form successfully submitted! Thank you for reaching out.
+        El formulario se ha enviado correctamente. Gracias por ponerse en contacto con nosotros.
     </div>
 
     <script>
