@@ -2,68 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Proyecto 1  - Discos!</title>
+    <link rel="stylesheet" href="./styles/styles_projects.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
 </head>
 <body>
-<header>
-    <section class="hero">
-        <div id="particles-js"></div>
-        <h1 class="hero__name">Adrià Congostrina Garcia</h1>
-        <p class="hero__subtitle">DualBoot · Linux · Windows</p>
-        
-        <div class="nav">
-            <a class="nav__l" href="index.html">Un poco sobre mi</a>
-            <a class="nav__l" href="proyecto1.html">Proyecto DualBoot</a>
-            <a class="nav__l" href="proyecto2.html">Proyecto Discos</a>
-            <a class="nav__l" href="proyectos.html">Mis Projectos</a>       
-        </div>
-    </section>
-</header>
-<main>
-    <section class="dualboot" id="dualboot">
-        <h3 class="dualboot__title">Proyecto DualBoot</h3>
-        <div class="dualboot__photo"></div>
-        <p class="dualboot__text">
-            Aqui os dejo un proyecto que hice hace un mes en clase
-             del cual estoy muy orgulloso, espero que os sirva de ayuda 
-        </p>
-       
-                    <script src="./js/particles.min.js"></script>
-                    <script src="./js/app.js"></script>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <h2 class="projects__title">Mis projectos</h2>
-            <div class="projects__item itemPro">
-                <div>
-                    <h3 class="projects__item__title">Proyecto Dualboot</h3>
-                    <div>
-                        <i class="devicon-react-original colored icon"></i>
-                        <i class="devicon-bootstrap-plain colored icon"></i>
-                        <i class="devicon-github-original colored icon"></i>
-                    </div>
-                    <p class="projects__item__text">
-                        Hace unos meses no sabia ni que era un dualboot pero consegui
-                        crear uno, funcionaban Linux y WIndows en la misma maquina!
-                        Aqui os dejo mi proyecto y como lo hice. 
+    <header>
+        <nav class="nav">
+            <a class="nav__l" href="index.html">Home</a>
+            <a class="nav__l" href="index.html#aboutme">Un poco sobre mi</a>
+            <a class="nav__l" href="proyectos.html">Mis Proyectos</a>
+            <a class="nav__l" href="formulario.html">Formulario</a>
+        </nav>
+    </header>
+    <main>
+        <section class="project-detail">
+            <h1 class="project-title">Discos!</h1>
+            <div class="project-content">
+                <div class="project-description">
+                    <p>
+                        En este proyecto formatee, augmente tamaño, reduci, segmente, todo lo que se puede hacer en un disco.
                     </p>
-                    <a class="btn__project" href="proyecto1.html">DualBoot!</a>
+                    <p>
+                        En el boton de abajo puedes ver el PDF con la explicacion de como hacerlo.
+                    </p>
                 </div>
-                <div>
-                    <img class="img__project" src="./assets/dualboot.png" alt=""  width="500px">
+                <div class="project-technologies">
+                    <h3>Tecnologias usadas:</h3>
+                    <ul>
+                        <li><i class="devicon-wordpress-plain colored icon"></i> Google</li>
+                    </ul>
+                </div>
+                <div class="project-image">
+                    <img src="./assets/discos.jpg" alt="Discos!" width="500px">
+                </div>
+                <!-- Botón para ver la presentación en Canva -->
+                <div class="project-button">
+                    <a href="./assets/discos.pdf" target="_blank" class="btn__project">Visualizar PDF</a>
                 </div>
             </div>
+        </section>
+    </main>
+    <footer>
+        <div class="containerLogoLinks">
+            <a target="_blank" href="#"><img class="logoLinks" src="./assets/linkedinlogo.svg" alt="LinkedIn"></a>
+            <a target="_blank" href="contact.html"><img class="logoLinks" src="./assets/sheetlogo.svg" alt="Contact Form"></a>
+            <a target="_blank" href="#"><img class="logoLinks" src="./assets/githublogo.svg" alt="GitHub"></a>
+            <a target="_blank" href="#"><img class="logoLinks" src="./assets/gmaillogo.svg" alt="Email"></a>
         </div>
-        <div class="projects__item itemPro">
-        </div>
-        <div class="projects__item__reverse itemPro">
-            <div>
-        </div>
-    </section>
-</main>
+        <p>&copy; 2024 Adrià Congostrina. All rights reserved.</p>
+    </footer>
+</body>
+</html>
